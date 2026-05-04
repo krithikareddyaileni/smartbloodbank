@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Find Donors</title>
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+
+<body>
+
+<header class="navbar">
+  <h2>🩸 BloodFinder</h2>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="register.html">Register</a>
+  </nav>
+</header>
+
+<!-- 🔍 SEARCH BAR -->
+<div class="search-container">
+  <select id="blood">
+    <option value="">Blood Group</option>
+    <option>A+</option><option>A-</option>
+    <option>B+</option><option>B-</option>
+    <option>O+</option><option>O-</option>
+    <option>AB+</option><option>AB-</option>
+  </select>
+
+  <select id="radius">
+    <option value="5">5 KM</option>
+    <option value="10">10 KM</option>
+    <option value="20">20 KM</option>
+  </select>
+
+  <select id="availability">
+    <option value="">All</option>
+    <option value="1">Available Only</option>
+  </select>
+
+  <select id="emergency">
+    <option value="">Normal</option>
+    <option value="1">Emergency</option>
+  </select>
+
+  <button onclick="search()">Search</button>
+</div>
+
+<!-- 📋 DONOR RESULTS -->
+<div id="results"></div>
+<div id="map" style="height:500px;"></div>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="js/map.js"></script>
+
+</body>
+</html>
