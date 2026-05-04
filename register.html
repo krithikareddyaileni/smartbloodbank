@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register Donor</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+  <h2>🩸 BloodFinder</h2>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="map.html">Search</a>
+  </nav>
+</header>
+
+<section class="form-container">
+  <h2>Become a Donor</h2>
+
+  <label for="name">Full Name</label>
+  <input id="name" placeholder="Enter your full name">
+
+  <label for="phone">Phone Number</label>
+  <input id="phone" placeholder="Enter phone number">
+
+  <label for="blood">Blood Group</label>
+  <select id="blood">
+    <option value="">Select Blood Group</option>
+    <option>A+</option><option>A-</option>
+    <option>B+</option><option>B-</option>
+    <option>O+</option><option>O-</option>
+    <option>AB+</option><option>AB-</option>
+  </select>
+
+  <label for="age">Age</label>
+  <input type="number" id="age" placeholder="Enter age">
+
+  <label for="gender">Gender</label>
+  <select id="gender">
+    <option value="">Select Gender</option>
+    <option>Male</option>
+    <option>Female</option>
+    <option>Other</option>
+  </select>
+
+  <label for="last_donation">Last Donation Date</label>
+  <input type="date" id="last_donation">
+
+  <label for="weight">Weight (kg)</label>
+  <input type="number" id="weight" placeholder="Enter weight">
+
+  <label for="health">Health Status</label>
+  <select id="health">
+    <option value="Healthy">Healthy</option>
+    <option value="Not Healthy">Not Healthy</option>
+  </select>
+
+  <label for="disease">Any Chronic Disease?</label>
+  <select id="disease">
+    <option value="No">No</option>
+    <option value="Yes">Yes</option>
+  </select>
+
+  <label for="availability">Availability</label>
+  <select id="availability">
+    <option value="1">Available</option>
+    <option value="0">Not Available</option>
+  </select>
+
+  <label for="emergency">Emergency Donation</label>
+  <select id="emergency">
+    <option value="0">Normal Donor</option>
+    <option value="1">Emergency Available</option>
+  </select>
+
+  <button type="button" onclick="registerDonor()">Register</button>
+
+</section>
+
+<footer>
+  <p>© 2026 BloodFinder</p>
+</footer>
+
+<script src="js/register.js"></script>
+
+</body>
+</html>
